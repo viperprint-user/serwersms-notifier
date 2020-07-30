@@ -30,5 +30,8 @@
         "branch-alias": {
             "dev-master": "5.2-dev"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
