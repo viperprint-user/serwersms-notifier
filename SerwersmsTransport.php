@@ -62,6 +62,8 @@ final class SerwersmsTransport extends AbstractTransport
 
             throw new TransportException(sprintf('Unable to send the SMS: %s (%s).', $contents, $code), $response);
         }
+
+        return new SentMessage($message, (string) $this);
     }
 
     public function supports(MessageInterface $message): bool
